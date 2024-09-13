@@ -41,3 +41,6 @@ class Account():
         print(f"Balance: {self.balance}")
         print(f"Password: {self.password}")
         print()
+        
+if __name__ == "__main__":
+    ac = Account()
