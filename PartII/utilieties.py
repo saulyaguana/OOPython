@@ -36,4 +36,4 @@ class Person:
         self.birthday = birthday
         
 if __name__ == "__main__":
-    player1 = Player("Edward", 33, 50, {"x": 29, "y": 44.5})
+    player1 = Player("Leon-main", 45, 22, {"x": 129, "y": 443.8})
