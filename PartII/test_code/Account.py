@@ -1,3 +1,10 @@
+# Errors indicated by "raise" statements
+
+# Define a custom exception
+class AbortTransaction(Exception):
+    ''''raise this expection to abort a bank transaction'''
+    pass
+
 class Account():
     def __init__(self, name, balance, password):
         self.name = name
