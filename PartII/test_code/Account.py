@@ -26,7 +26,7 @@ class Account():
         
     def deposit(self, amount_to_deposit):
         amount_to_deposit = self.validate_amount(amount_to_deposit)
-        self.balance = += amount_to_deposit
+        self.balance += amount_to_deposit
         return self.balance
     
     def withdraw(self, amount_to_withdraw):

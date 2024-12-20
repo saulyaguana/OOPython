@@ -20,13 +20,13 @@ class Bank():
         return account_number
     
     def get_users_account(self):
-        account_number = self.asf_for_valid_account_number()
+        account_number = self.ask_for_valid_account_number()
         account = self.accounts_dict[account_number]
         self.ask_for_valid_password(account)
         return account
             
             
-     def ask_for_valid_password(self, account):
+    def ask_for_valid_password(self, account):
          password = input("Please enter your password: ")
          account.check_password_match(password)
          
@@ -89,8 +89,8 @@ class Bank():
     def show(self):
         print("*** Show ***")
         print('(This would typically require an admin password)')
-        for userAccountNumber in self.accountsDict:
-            oAccount = self.accountsDict[userAccountNumber]
+        for userAccountNumber in self.accounts_dict:
+            oAccount = self.accounts_dict[userAccountNumber]
             print('Account:', userAccountNumber)
             oAccount.show()
             print()
